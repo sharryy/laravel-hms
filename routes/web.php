@@ -23,6 +23,10 @@ Route::middleware(['auth'])->group(function () {
         return view('dashboard');
     })->name('dashboard');
 
+    Route::get('/student/add', function () {
+        return view('students.add');
+    })->name('student.add');
+
 });
 
 

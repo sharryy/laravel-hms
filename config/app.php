@@ -39,7 +39,7 @@ return [
     |
     */
 
-    'debug' => (bool) env('APP_DEBUG', false),
+    'debug' => (bool)env('APP_DEBUG', false),
 
     /*
     |--------------------------------------------------------------------------
@@ -55,6 +55,12 @@ return [
     'url' => env('APP_URL', 'http://localhost'),
 
     'asset_url' => env('ASSET_URL', null),
+
+    'profile' => [
+        ['url' => '#', 'name' => 'Profile'],
+        ['url' => '#', 'name' => 'Welcome Screen'],
+        ['url' => 'logout', 'name' => 'Logout']
+    ],
 
     /*
     |--------------------------------------------------------------------------
